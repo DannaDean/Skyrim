@@ -1,0 +1,1163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800&family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    --fira-font: 'Fira Sans', sans-serif;
+    --libre-font: 'Libre Caslon Text', serif;
+    --montserrat-font:  'Montserrat', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    --white-color: rgba(255, 255, 255, 08);
+    --grey-color: #b5b5b5;
+    --babyblue-color: rgb(134, 170, 184);
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none; outline: none;
+}
+
+/* -------header------- */
+
+.log {
+    height: 60px;
+    background-color: #2b2b2b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: var(--fira-font);
+    cursor: pointer;
+}
+
+
+.register {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.register i {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.register button {
+    background-color: rgba(32, 32, 32, 1);
+    border: 1px solid var(--grey-color);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 24px;
+    font-family: var(--montserrat-font);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register button:hover {
+    color: rgb(255, 255, 255);  
+}
+
+
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    gap: 16px;
+    padding: 0 16px;
+    z-index: 100;
+}
+
+.nav .game-title {
+    color: #fff;
+    font-size: 18px;
+    font-family: var(--libre-font);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul .game-title {
+    margin-right: 20px;
+}
+
+nav ul .nav-link {
+    display: block;
+    padding: 20px 12px;
+    font-family: var(--libre-font);
+    font-size: 14px;
+    color: #fff
+}
+nav ul .nav-link i {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.btn {
+    display: inline-block;
+    font-family: var(--libre-font);
+    color: #C0C0C0;
+    font-size: 14px;
+    height: 42px;
+    padding: 10px 40px;
+    text-align: center;
+    clip-path: polygon(calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%, 20px 0%);
+    width: fit-content;
+}
+
+.nav-buttons .updates {
+    background-color: #000;
+    margin-right: 16px;
+}
+
+.nav-buttons .buy-now {
+    background-color: var(--babyblue-color);
+    color: #000;
+}
+
+
+/*------Hero Section------- */
+
+.hero {
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/1tZG7N2uPi8e42seOKEyG8/2c832dfeb8dc3c6a3396b229e6f31de7/hero-bg.jpg?q=70&&&fm=webp');
+    height: 67vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-bg-img img{
+    width: 100%;
+}
+
+.trailer-btn {
+    background-color: var(--babyblue-color);
+    color: #000;
+    margin-top: 40px;
+}
+
+
+/*------Latest Section------- */
+
+.latest-section {
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/1oQtOXhkWkMQykMisaO8AC/b1fdd9a3dc9e352f26fcd58c7866de6e/Skyrim_Fog_BG.jpg?q=70&fm=jpg&fl=progressive&w=750&h=846&fit=thumb');
+    background-position: center;
+    background-size: cover;
+}
+
+.latest {
+    max-width: 1279px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.latest h2 {
+    padding-top: 17px;
+    margin-bottom: 14px;
+    font-size: 2.5rem;
+    font-weight: normal;
+    font-family: var(--libre-font);
+    color: var(--grey-color);
+}
+
+hr {
+    width: 36px;
+    margin-bottom: 50px;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 21px;
+}
+
+.article {
+    width: 100%;
+}
+
+.articles-container img {
+    width: 100%;
+    max-width: 412px;
+    margin-bottom: 20px;
+}
+
+.article-content h3 {
+    color: var(--grey-color);
+    font-size: 18px;
+    font-family: var(--libre-font);
+    font-weight: normal;
+    line-height: 1.65rem;
+    cursor: pointer;
+}
+
+.article-content p:nth-of-type(1) {
+    color: var(--grey-color);
+    font-family: var(--roboto-font);
+    font-size: 11px;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.article-content p:nth-of-type(2) {
+    color: var(--grey-color);
+    font-family: var(--roboto-font);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+.article-content a {
+    display: inline-block;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-size: 14px;
+    margin-top: 16px;
+    text-decoration: underline;
+}
+
+.latest-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.latest-btn .late-btn {
+    background-color: var(--babyblue-color);
+    color: #000;
+    margin: 30px 0 40px;
+}
+
+
+/* -----The Elder Scrolls Section----- */
+
+.the-elder {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('https://images.ctfassets.net/rporu91m20dc/36K0xf8L4ICMIqIcOAEq2q/aad2988f58b5370d758762f14cc599ef/skyrim--blocks--skyrim-bg.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.the-scroll {
+    max-width: 1279px;
+    margin: 0 auto;
+}
+
+.the-scroll h1 {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.the-scroll p {
+    font-size: 15px;
+    font-family: var(--libre-font);
+    max-width: 450px;
+    color: var(--grey-color);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.the-scroll video {
+    width: 230px;
+    height: 119px;
+}
+
+
+/* -----Dragonborn Section----- */
+
+.dragon {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('https://images.ctfassets.net/rporu91m20dc/5M4RGwncbuO6UcQMuMyiSS/b403128aeb0a30b67cf7714ade278e52/skyrim--blocks--dragonborn-bg.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.dragon-container {
+    max-width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dragon-container h1 {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.dragon-container p {
+    font-size: 15px;
+    font-family: var(--libre-font);
+    max-width: 450px;
+    color: var(--grey-color);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.dragon-container video {
+    width: 230px;
+    height: 119px;
+}
+
+/* -----Downguard Section----- */
+
+.dawnguard {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('https://images.ctfassets.net/rporu91m20dc/2pKBE5jOOUEkg60gUcqsgE/b7ee34a0bd4e38fe19b10880db8cd91e/skyrim--blocks--dawnguard-bg.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.dawnguard-container {
+    max-width: 1279px;
+    margin: 0 auto;
+}
+
+.dawnguard-container h1 {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.dawnguard-container p {
+    font-size: 15px;
+    font-family: var(--libre-font);
+    max-width: 450px;
+    color: var(--grey-color);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.dawnguard-container video {
+    width: 230px;
+    height: 119px;
+}
+
+/* -----heartfire Section----- */
+
+.heartfire {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url('https://images.ctfassets.net/rporu91m20dc/4ADEHIAoYwcqqcQmkQOKoy/ff81a87bd175c976978a8443681eb010/skyrim--blocks--hearthfire-bg.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.heartfire-container {
+    max-width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.heartfire-container h1 {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.heartfire-container p {
+    font-size: 15px;
+    font-family: var(--libre-font);
+    max-width: 450px;
+    color: var(--grey-color);
+    line-height: 1.5;
+    margin-bottom: 16px;
+    text-align: right;
+}
+
+.heartfire-container video {
+    width: 230px;
+    height: 119px;
+}
+
+.heartfire-img {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.heartfire-img .video-arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* -----Games Section----- */
+
+.games {
+    background-color: #393939;
+    position: relative;
+}
+
+.games-container {
+    max-width: 1279px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.games-container .title {
+    font-size: 40px;
+    color: var(--grey-color);
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.center-container {
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/2zjHewJxFuiIk8mAEk0YmU/411f0b996c82e5a6dca37c2946f9c738/Skyrim-VR_GameCarousel_BG_1500x825-01_NO_LOGO.png?q=70&fm=png');
+    width: 100%;
+    max-width: 1279px;
+    box-shadow: 4px 4px 13px 0 rgb(0 0 0 / 25%);
+}
+
+.games-content {
+    margin: 0 50px;
+}
+
+.games-content h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: var(--libre-font);
+    font-weight: 400;
+    margin-bottom: 25px;
+    padding-top: 60px;
+}
+
+.games-content p {
+    font-size: 16px;
+    color: var(--grey-color);
+    max-width: 430px;
+    font-family: var(--roboto-font);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.selectors {
+    margin: 0 50px;
+    max-width: 430px;
+}
+
+.selectors .select {
+    display: inline-block;
+    width: 210px;
+    border: 1px solid white;
+    padding: 14px 25px 14px 14px;
+    font-size: 16px;
+    color: #fff;   
+}
+
+.selectors .grey {
+    color: #393939;
+    border: 1px solid #393939;
+    margin-top: 10px;
+    cursor: not-allowed;
+}
+
+
+.games-btn {
+    margin: 40px 50px 0;
+}
+
+.games-btn .game-btn {
+    background-color: #394245;
+    color: #c0c0c0;
+    margin: 30px 0 40px;
+    cursor: not-allowed;
+}
+
+.types-games-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.type-content {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    max-width: 410px;
+    padding: 10px 15px;
+    border-top: 2px solid #fff;
+}
+
+.type-content img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.type-content p {
+    font-family: var(--libre-font);
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* -----Sign Up Section----- */
+
+.sign-up {
+    background-image: url('https://elderscrolls.bethesda.net/images/signup-bg.png?32d7fc68016bb1812e12b8d5f9a95434');
+    background-size: cover;
+    padding: 10px 0;
+}
+
+.sign-up-container {
+    max-width: 1279px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    padding: 60px 0;
+}
+
+.sign-up-content h1{
+    font-family: var(--libre-font);
+    color: var(--grey-color);
+    padding-bottom: 14px;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.sign-up-img img{
+    height: 235px;
+}
+
+.login {
+    background-color: var(--babyblue-color);
+    color: #000;
+    margin: 30px 0 40px;
+}
+
+/* -----Media Section----- */
+
+.media {
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/6Ikfe2CIiQyGmeGAISmCEq/b8a4de2a14729d12e7205feafb89c9fa/skyrim--fog-bg.jpg');
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.media-container {
+    max-width: 1279px;
+    margin: 0 auto;
+}
+
+.media-container h1 {
+    font-family: var(--libre-font);
+    color: var(--grey-color);
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 14px;
+}
+
+
+.filter .name {
+    font-family: var(--roboto-font);
+    color: var(--grey-color);
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.filter ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    margin: 0 0 62px 20px;
+    
+}
+
+.filter ul li {
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.filter ul li .all {
+    position: absolute;
+    top: 55px;
+    font-size: 13px;
+    color: #fff;
+    
+}
+
+.filter ul li .all-img {
+    height: 13px;
+}
+
+.filter ul li img{
+    height: 20px;
+}
+
+
+.media-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 19.5vh);
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5"
+    "img6 img7 img7 img8"
+    "img9 img7 img7 img10"
+    "img11 img12 img13 img13"
+    "img14 img15 img13 img13";
+}
+
+.image1 {
+    grid-area: img1;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/7KWXXn6JO0mGy6SCeQMiuu/254e867283eb0b4bf4d26254e63a9a32/skyrim-media--skyrim-vr-live-action-trailer.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.image2 {
+    grid-area: img2;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/1wAKVtoXkwAUmWyIkAiwYg/19476c63bb7fda8d447eb138723ffdb8/skyrim-media--skyrim-vr-trailer.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image3 {
+    grid-area: img3;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/3mF8HtR3S0mSQ2KCe8YIc6/3168ecec6f1a336981e47cc341ab8d83/40177_3_1.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image4 {
+    grid-area: img4;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/3OZeVhDEJ24aKUeQOSm6gu/5e0534cc54c4955c678459d58edec8ab/98755_1_0.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image5 {
+    grid-area: img5;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/5s2vvkI0KcKu28Eicw8i8q/3d866bc1a8931b90c9c0d68bb0cb56fe/40027_3_0.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image6 {
+    grid-area: img6;
+    background-image: url('http://images.ctfassets.net/rporu91m20dc/1Gou55VWzCu68I4ioUgCSu/6b952fae7b53b6785c2ca316035d3b15/skyrim-overview-media--trailer.png');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image7 {
+    grid-area: img7;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/10UVvm8qyOIiae0Q8UIamK/668a83d9e18ce105c820a213f0d5fe03/39861_3_0.jpg');
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+}
+.image8 {
+    grid-area: img8;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/2H47D4ofi80AC4cEcmaCWk/30f596a564ddd78d7f99bf99cb66edf7/39843_3_0.jpg');
+    position: relative;
+    background-size: cover;
+    cursor: pointer;
+}
+.image9 {
+    grid-area: img9;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/2BtgvoqxRSY2SkEyEckeIi/aac9450628da00e3f428753a3dfc51e6/40159_1_0.jpg');
+    position: relative;
+    background-size: cover;
+    cursor: pointer;
+}
+.image10 {
+    grid-area: img10;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/fh77U2fFHagCUGgieIYo4/4ac3abb580d134ce42b8abcb4bf108fb/skyrim-overview-media--tundra-4k-screen.png?q=70&&&fm=webp');
+    background-size: cover;
+    cursor: pointer;
+}
+.image11 {
+    grid-area: img11;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/5ItxKSrZTyKcaCs2wO4I0C/07a0b22f5749e8b701079a54b3fb7968/skyrim-overview-media--fall-forest-4k-screen.png?q=70&&&fm=webp');
+    background-size: cover;
+    cursor: pointer;
+}
+.image12 {
+    grid-area: img12;
+    cursor: text;
+}
+.image13 {
+    grid-area: img13;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/3ogRnOJSH66e0uwGAcCGo6/32506af26e41540e46b593d8d31a9eec/skyrim-overview-media--spriggan.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    cursor: pointer;
+}
+.image14 {
+    grid-area: img14;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/4G2A86U7sco2iI00esmaCY/cba574418d71b65f048263c671d54fce/skyrim-overview-media--solitude.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    cursor: pointer;
+}
+.image15 {
+    grid-area: img15;
+    background-image: url('https://images.ctfassets.net/rporu91m20dc/4gWbdrBdpKM26UowQumQEA/6fa8e7cf74b391859714d70ddedcecb5/skyrim-overview-media--snow.jpg?q=70&&&fm=webp');
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.video-center img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.image12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.image12 p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.image12 .data {
+    width: 190px;
+    background-color: #393939;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.image12 a{
+    width: 84px;
+    padding: 8px 10px;
+    background-color: #fff;
+    color: #000;
+}
+
+.media-button {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.media-btn {
+    background-color: var(--babyblue-color);
+    color: #000;
+}
+
+
+/* -----Devices Section----- */
+
+.devices {
+    background-color: #3d3d3d;
+    padding: 40px 0;
+}
+
+.devices-container {
+    width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.devices-container img:nth-of-type(1){
+    width: 30px;
+    height: 30px;
+}
+.devices-container img:nth-of-type(2){
+    width: 96px;
+}
+.devices-container img:nth-of-type(3){
+    width: 96px;
+}
+.devices-container img:nth-of-type(4){
+    width: 89px;
+}
+
+/* -----Languages Section----- */
+
+.languages {
+    background-color: #242424;
+}
+
+.languages-container {
+    width: 1279px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 90px 0;
+}
+
+.lang-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang-icon img {
+    width: 27px;
+    height: 27px;
+    margin-bottom: 26px;
+}
+
+.lang-icon p {
+    font-family: var(--montserrat-font);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.select-lang {
+    width: 260px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 21px;
+}
+
+.select-lang P {
+    font-size: 12px;
+    font-family: var(--montserrat-font);
+    color: #fff;
+    font-weight: 600;
+}
+
+.select-lang img{
+    height: 10px;
+}
+
+
+/* -----Footer----- */
+
+footer {
+    background-color: #1d1d1d;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+}
+
+.content1 ul {
+    list-style: none;
+    line-height: 1rem;
+    margin-left: 0;
+    column-count: 2;
+}
+
+
+.content1 ul li a {
+    display: inline-block;
+    color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--montserrat-font);
+    line-height: 1.5;
+    margin-bottom: 12px;
+    width: 190px;
+}
+
+.content1 ul li a:hover {
+    color: #fff;
+}
+
+.content1 ul li .new-button {
+    color: #000;
+    background-color: #2cc0bc;
+    font-size: 8px;
+    font-family: var(--montserrat-font);
+    margin-left: 3px;
+    border-radius: 2px;
+    padding: 1px;
+    font-weight: 600;
+}
+
+.content1 h3{
+    border-bottom: 2px solid rgb(46, 46, 46);
+    font-family: var(--montserrat-font);
+    font-size: 12px;
+    margin: 12px 0;
+    padding-bottom: 12px;
+    color: #fff;
+    line-height: 1.4em;
+    letter-spacing: 1.5px;
+}
+
+.info2-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 5vw;
+    align-items: center;
+}
+
+.info2-container h1 {
+    font-size: 30px;
+    font-family: var(--fira-font);
+    cursor: pointer;
+    color: #fff;
+}
+
+.info2-container .privacy {
+    display: flex;
+}
+
+.info2-container .privacy img {
+    margin: 5px;
+    height: 90px;
+}
+
+.info2-container .game-themes {
+    margin: 5px;
+}
+
+.info2-container .game-themes p {
+    font-family: var(--montserrat-font);
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.copyright {
+    padding: 0 5vh 4vh 5vw;
+}
+
+.copyright p {
+    color: #b3b3b3;
+    font-family: var(--montserrat-font);
+    font-size: 12px;
+}
+
+
+/* -----Media Queries----- */
+
+@media  screen and (max-width: 1200px) {
+    .latest {
+        padding: 40px 15px;
+    }
+
+    .heartfire-container, 
+    .the-scroll,  
+    .dawnguard-container, 
+    .dragon-container {
+        padding: 0 15px;
+    }
+
+    .games-container {
+        margin: 0 15px;
+    }
+
+    .sign-up-content {
+        width: 638px;
+    }
+
+    .sign-up-container {
+        padding: 20px;
+    }
+
+    .login {
+        margin: 0;
+    }
+
+    .media-container {
+        padding: 20px;
+    }
+
+    .content1 ul {
+        column-count: 1;
+    }
+}
+
+@media  screen and (max-width: 1024px) {
+    nav ul li,
+    .nav-buttons{
+        display: none;
+    }
+
+    nav ul img {
+        padding: 20px 16px;
+    }
+
+    .sign-up-container {
+        gap: 50px;
+    }
+
+    .sign-up-img img{
+        height: 200px;
+    }
+
+    .media-content {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8,  18.16vh);
+        grid-template-areas: 
+        "img1 img1 img2"
+        "img1 img1 img3"
+        "img4 img5 img6"
+        "img7 img9 img9"
+        "img8 img9 img9"
+        "img10 img11 img12"
+        "img13 img13 img14"
+        "img13 img13 img15";
+    }
+
+    .devices-container,
+    .languages-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+@media  screen and (max-width: 768px) {
+    .articles-container {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+    
+    .articles-container img {
+        width: 100%;
+        max-width: 738px;
+    }
+
+    .center-container {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.ctfassets.net/rporu91m20dc/2dIFHfUiN2OUcY0oI4kCo8/dba04ebd3fdf28f56bce01de1033799b/game-bg--skyrim-vr.jpg');
+        background-position: right;
+        background-size: cover;
+    }
+
+    .heartfire-container p,
+    .dawnguard-container p,
+    .dragon-container p,
+    .the-scroll p {
+        max-width: 768px;
+        
+    }
+
+    .article-content a {
+        margin-bottom: 40px;
+    }
+}
+@media  screen and (max-width: 480px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content1 ul {
+        display: none;
+    }
+
+    .selectors .select {
+        width: 100%; 
+    }
+
+    .game-btn {
+        width: 100%;
+    }
+
+    .media-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8,  13.7vh);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12"
+        "img13 img14"
+        "img15 .";
+    }
+
+    .article-content a {
+        margin-bottom: 40px;
+    }
+}
+@media  screen and (max-width: 320px) {
+    .register {
+        display: none;
+    }
+
+    .hero-bg-img img {
+        max-width: 300px;
+    }
+
+    .article-content a {
+        margin-bottom: 40px;
+    }
+
+    .devices-container {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info2-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .info2-container h1 {
+        padding-bottom: 20px;
+    }
+
+    .sign-up-img {
+        display: none;
+    }
+}
